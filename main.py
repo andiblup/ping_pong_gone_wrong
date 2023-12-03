@@ -8,7 +8,7 @@ from scoreboard import Scoreboard
 
 # screen
 screen = Screen()
-screen.setup(width=1000, height=700)
+screen.setup(width=1000, height=600)
 screen._root.resizable(False, False)
 screen.bgcolor("black")
 screen.title("PONG")
@@ -41,7 +41,7 @@ while gameloop:
     # print(ball.xcor())
     
     # north / south / wall collisions
-    if ball.ycor() > 340 or ball.ycor() < -340:
+    if ball.ycor() > 290 or ball.ycor() < -290:
         ball.bounce_y()
     
     #Detect collision with paddle
